@@ -1,0 +1,19 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Button GridPane.rowIndex="1" GridPane.columnIndex="6" text="Enter coordinates and date" onAction="#enterCoordinates"/>
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="4" fx:id="coordinateLabel"/>
+    <Text GridPane.rowIndex="0" GridPane.columnIndex="3" fx:id="latitudeText" text="LATITUDE"/>
+    <Text GridPane.rowIndex="0" GridPane.columnIndex="4" fx:id="longitudeText" text="LONGITUDE"/>
+    <Text GridPane.rowIndex="0" GridPane.columnIndex="5" fx:id="dateText" text="DATE"/>
+    <TextField GridPane.rowIndex="1" GridPane.columnIndex="3" fx:id="latitudeField"/>
+    <TextField GridPane.rowIndex="1" GridPane.columnIndex="4" fx:id="longitudeField" />
+    <TextField GridPane.rowIndex="1" GridPane.columnIndex="5" fx:id="dateField" />
+    <Text GridPane.rowIndex="2" GridPane.columnIndex="3" GridPane.columnSpan="3" fx:id="coordinatesText" />
+</GridPane>
